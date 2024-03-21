@@ -27,7 +27,7 @@ const Random = () => {
 
   useEffect(() => {
     getRandomRecipes();
-  },);
+  },[]);
   return (
     <Wrapper>
       <h3 className="text-3xl text-white font-semibold">
