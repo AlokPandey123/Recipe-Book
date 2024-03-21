@@ -18,7 +18,7 @@ const Random = () => {
       const resp = await fetch(
         `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_FOOD_API_KEY}&number=10`
       );
-      const data = await resp.JSON();
+      const data = await resp.json();
       setRandom(data.recipes);
       localStorage.setItem("popular", JSON.stringify(data.recipes));
       console.log(data.recipes);
