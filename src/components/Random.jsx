@@ -85,3 +85,5 @@ const Wrapper = styled.div`
 
 
 export default Random;
+
+
